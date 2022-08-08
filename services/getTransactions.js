@@ -115,10 +115,10 @@ Sent/Received ${walletCount.count} collectibles within the last ${Math.abs(hourD
             var tweetToSend = ""
             
             if(tokenAndCounts.count > collectibleBeingUsedForPingPong) {
-                tweetToSend = '⚠🤖 Suspicious COLLECTIBLE activity 🤖⚠'
+                tweetToSend = '⚠⚠⚠🤖 VERY Suspicious COLLECTIBLE activity - holy **** 🤖⚠⚠⚠'
             }
             else if(tokenAndCounts.count > collectibleThreshold) {
-                tweetToSend = '⚠⚠⚠🤖 VERY Suspicious COLLECTIBLE activity - holy **** 🤖⚠⚠⚠'
+                tweetToSend = '⚠🤖 Suspicious COLLECTIBLE activity 🤖⚠'
             }
 
             tokenAndCounts.map((tokenCount) => {
