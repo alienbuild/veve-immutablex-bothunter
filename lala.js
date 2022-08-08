@@ -1,3 +1,4 @@
+const {scheduledHourlyJobs} = require("./services");
 require('dotenv').config()
 
 // Services
