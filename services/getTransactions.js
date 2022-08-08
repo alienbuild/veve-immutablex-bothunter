@@ -111,10 +111,19 @@ Sent/Received ${walletCount.count} collectibles within the last ${Math.abs(hourD
 
             // Define the threshold for what is suspcious
             const collectibleThreshold = 13
+            const collectibleBeingUsedForPingPong = 30
+            var tweetToSend = ""
+            
+            if(tokenAndCounts.count > collectibleBeingUsedForPingPong) {
+                tweetToSend = '⚠🤖 Suspicious COLLECTIBLE activity 🤖⚠'
+            }
+            else if(tokenAndCounts.count > collectibleThreshold) {
+                tweetToSend = '⚠⚠⚠🤖 VERY Suspicious COLLECTIBLE activity - holy **** 🤖⚠⚠⚠'
+            }
 
             tokenAndCounts.map((tokenCount) => {
                 if (tokenCount.count > collectibleThreshold) {
-                    tweet = `⚠🤖 Suspicious COLLECTIBLE activity 🤖⚠
+                    tweet = `${tweetToSend}
                     
 Token (Collectible): 
 https://immutascan.io/address/0xa7aefead2f25972d80516628417ac46b3f2604af/${tokenCount.value}
