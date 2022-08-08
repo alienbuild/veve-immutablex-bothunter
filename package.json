@@ -1,0 +1,27 @@
+{
+  "name": "veve-immutablex-bothunter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienbuild/veve-immutablex-bothunter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alienbuild/veve-immutablex-bothunter/issues"
+  },
+  "homepage": "https://github.com/alienbuild/veve-immutablex-bothunter#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "moment": "^2.29.4",
+    "node-fetch": "^3.2.10",
+    "node-schedule": "^2.1.0",
+    "twit": "^2.2.11"
+  }
+}
